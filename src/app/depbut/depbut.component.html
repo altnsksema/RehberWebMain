@@ -1,0 +1,20 @@
+<h1 mat-dialog-title>Departman Bilgilerini {{actionBtn}}  </h1>
+<div mat-dialog-content>
+  <form [formGroup]="departmanForm">
+    <mat-form-field appearance="outline">
+      <mat-label>Departman Adı</mat-label>
+      <input
+        formControlName="ad"
+        matInput
+        placeholder="Departman Adı"
+        autocomplete="off"
+      />
+    </mat-form-field>
+  </form>
+</div>
+
+<div mat-dialog-action [align]="'end'">
+  <button mat-raised-button color="warn" mat-dialog-close>Kapat</button>
+  <button style="margin-left: 8px" mat-raised-button color="primary" (click)="ekle()"> {{actionBtn}} </button>
+</div>
+

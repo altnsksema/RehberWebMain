@@ -1,0 +1,54 @@
+{
+  "personelForm": [
+    {
+      "id": 2,
+      "ad": "Ahmet ",
+      "soyad": "İskender",
+      "telefon": "5556780987",
+      "email": "ahmetiskender@gmail.com",
+      "departmanId": 1
+    },
+    {
+      "id": 3,
+      "ad": "Volkan",
+      "soyad": "Akdeniz",
+      "telefon": "5530846003",
+      "email": "volkanakdeniz@gmail.com",
+      "departmanId": 3
+    },
+    {
+      "id": 5,
+      "ad": "Zülal",
+      "soyad": "Çandı",
+      "telefon": "5422157216",
+      "email": "zulalcandi@gmail.com",
+      "departmanId": 1
+    },
+    {
+      "id": 7,
+      "ad": "Mete",
+      "soyad": "Demiralp",
+      "telefon": "5678076543",
+      "email": "metedemiralp@hotmail.com",
+      "departmanId": 1
+    },
+    {
+      "id": 8,
+      "ad": "Doğa",
+      "soyad": "Selek",
+      "telefon": "5545028799",
+      "email": "dogaselek05@gmail.com",
+      "departmanId": 1
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  }
+}

@@ -1,0 +1,66 @@
+<h1 mat-dialog-title>Şifremi Güncelle</h1>
+    
+     <div class="container">
+      <div style="margin-top: 10 px;">
+  
+        <div> 
+            <form [formGroup]="ProfileForm">
+              <mat-form-field appearance="outline">
+                <mat-label> Eski Şifre</mat-label>
+                <input
+                formControlName="eski_sifre"
+                matInput
+                placeholder="Eski Şifrenizi Giriniz"
+                autocomplete="off"
+              /> 
+              </mat-form-field>
+              <mat-form-field appearance="outline">
+                <mat-label>Yeni Şifre</mat-label>
+                <input
+                formControlName="birinci_sifre"
+                matInput
+                placeholder="Yeni Şİfrenizi Giriniz"
+                autocomplete="off"
+              /> 
+              </mat-form-field>
+              <mat-form-field appearance="outline">
+                <mat-label>Yeni Şifre</mat-label>
+                <input
+                formControlName="ikinci_sifre"
+                matInput
+                placeholder="Yeni Şifrenizi Tekrarlayınız"
+                autocomplete="off"
+              /> 
+              </mat-form-field>
+          </form>
+          </div>
+          
+          </div>
+          
+          <div mat-dialog-action [align]="'end'" >
+            <button mat-raised-button color="warn" mat-dialog-close>Kapat</button>
+            <button
+              style="margin-right: 450px"
+              mat-raised-button
+              color="primary"
+            >
+            </button>
+          </div>
+          
+          
+          <div mat-dialog-action [align]="'end'" >
+            <button mat-raised-button color="primary" mat-dialog-close>Kaydet</button>
+            <button
+              style="margin-right: 450px"
+              mat-raised-button
+              color="primary"
+              (click)="send()"
+            >
+            </button>
+          </div>
+          
+          
+  
+    </div>
+
+

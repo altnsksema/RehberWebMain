@@ -1,0 +1,63 @@
+<h1 mat-dialog-title>Kişi Bilgilerini {{ actionBtn }}</h1>
+<div mat-dialog-content>
+  <form [formGroup]="personelForm">
+    <mat-form-field appearance="outline">
+      <mat-label>Ad</mat-label>
+      <input
+        formControlName="ad"
+        matInput
+        placeholder="Ad"
+        autocomplete="off"
+      />
+    </mat-form-field>
+    <mat-form-field appearance="outline">
+      <mat-label>Soyad</mat-label>
+      <input
+        formControlName="soyad"
+        matInput
+        placeholder="Soyad"
+        autocomplete="off"
+      />
+    </mat-form-field>
+    <mat-form-field appearance="outline">
+      <mat-label>Dahili Telefon</mat-label>
+      <input matInput mask="0000" formControlName="dahilitelefon" />
+    </mat-form-field>
+    <mat-form-field appearance="outline">
+      <mat-label>Telefon</mat-label>
+      <input matInput mask="(0000) 000 00 00" formControlName="telefon" />
+    </mat-form-field>
+    <mat-form-field appearance="outline">
+      <mat-label>Departman</mat-label>
+      <mat-select formControlName="departmanId" placeholder="Departmanlar" (valueChange)="getTitleByDepartmanId($event)">
+        <mat-option
+          *ngFor="let departman of departmanlar"
+          [value]="departman.id"
+        >
+          {{ departman.ad }}
+        </mat-option>
+      </mat-select>
+    </mat-form-field>
+    
+    <mat-form-field appearance="outline">
+      <mat-label>Ünvan</mat-label>
+      <mat-select formControlName="unvanId" placeholder="Ünvanlar">
+        <mat-option *ngFor="let unvan of unvanlar" [value]="unvan.id">
+          {{ unvan.ad }}
+        </mat-option>
+      </mat-select>
+    </mat-form-field>
+  </form>
+</div>
+
+<div mat-dialog-action [align]="'end'">
+  <button mat-raised-button color="warn" mat-dialog-close>Kapat</button>
+  <button
+    style="margin-left: 8px"
+    mat-raised-button
+    color="primary"
+    (click)="kisiEkle()"
+  >
+    {{ actionBtn }}
+  </button>
+</div>

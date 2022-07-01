@@ -1,0 +1,24 @@
+  <mat-toolbar color="primary" *ngIf="!isLoginPage">
+    <button [routerLink]="''" mat-icon-button class="example-icon" aria-label="Example icon-button with menu icon">
+      <mat-icon>supervised_user_circle</mat-icon>
+    </button>
+    <span >ARD REHBER</span>
+    <span class="example-spacer"></span>
+
+
+    <button style="margin-left: 10px;" [routerLink]="'/departmanlar'" mat-raised-button color="warn"> 
+      Departman Listesi
+      </button>
+      <button style="margin-left: 10px;" [routerLink]="'/kisiler'" mat-raised-button color="warn"> 
+       Kişi Listesi
+        </button>
+        <button style="margin-left: 10px;" [routerLink]="'/profil'" mat-raised-button color="warn"> 
+        Profilim 
+           </button>   
+        <button style="margin-left: 10px;" [routerLink]="'/login'" mat-raised-button color="warn"> 
+        Çıkış
+          </button>
+  
+  </mat-toolbar>
+
+ <router-outlet></router-outlet>

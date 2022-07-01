@@ -1,0 +1,58 @@
+
+<div class="sayfa-hizala">
+<button mat-raised-button color="warn" (click)= "openDialog()"> 
+  Şİfremi Güncelle
+  </button>
+  
+  <div class="container">
+    <div style="margin-top: 10 px;">
+
+
+      <div>
+    
+        <div>
+    <img src="              ">
+        </div>
+    
+      <div> 
+      <form [formGroup]="ProfileForm">
+        <mat-form-field appearance="outline">
+          <mat-label> Ad</mat-label>
+          <input
+          formControlName="name"
+          matInput
+          placeholder="Ad"
+          autocomplete="off"
+        /> 
+        </mat-form-field>
+        <mat-form-field appearance="outline">
+          <mat-label>Soyad</mat-label>
+          <input
+          formControlName="surname"
+          matInput
+          placeholder="Soyad"
+          autocomplete="off"
+        /> 
+        </mat-form-field>
+        <mat-form-field appearance="outline">
+          <mat-label>E-Mail</mat-label>
+          <input
+          formControlName="email"
+          matInput
+          placeholder="E-Mail"
+          autocomplete="off"
+        /> 
+        </mat-form-field>
+    </form>
+    </div>
+    
+    </div>
+    
+    </div>
+    
+    </div>
+    </div>
+
+
+
+
